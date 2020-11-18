@@ -1,12 +1,12 @@
-#Example Consul Terraform Provider, Ctmpl for yaml values and GoLang code consuming it
-#Set KV values in Consul via Terraform 
+# Example Consul Terraform Provider, Ctmpl for yaml values and GoLang code consuming it
+## Set KV values in Consul via Terraform 
 in ./terraform
 ```shell script
 terraform init
 terraform apply
 ```
 
-#Consul-template
+## Consul-template
 ```shell script
 consul-template --template "config.yaml.ctmpl:config.yaml"
 ```
@@ -20,7 +20,7 @@ ip_set_config:
     name4: id4
 ```
 
-#Go
+## Go
 will consume config.yaml and treat `ipsets` as map[string]string
 ```
 name2 -> id2
