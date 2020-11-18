@@ -1,0 +1,3 @@
+ip_set_config:
+  ipsets:
+{{ key "autobahn/ipsets" | indent 4}}

@@ -1,0 +1,4 @@
+.idea
+consul-terraform-golang-example
+terraform/terraform.tfstate*
+terraform/.terraform
