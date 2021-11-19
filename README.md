@@ -13,6 +13,9 @@ terraform apply
 ```
 
 ## Consul-template
+### Language
+https://github.com/hashicorp/consul-template/blob/master/docs/templating-language.md
+### Render
 ```shell script
 consul-template --template "config.yaml.ctmpl:config.yaml"
 ```
@@ -24,6 +27,10 @@ ip_set_config:
     name2: id2
     name3: id3
     name4: id4
+```
+### Debug
+```
+consul-template --template "some.conf.ctmpl:some.conf" -dry -once -log-level debug
 ```
 
 ## Go
