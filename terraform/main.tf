@@ -1,6 +1,6 @@
 provider "consul" {
   address    = "127.0.0.1:8500"
-  datacenter = "test"
+  datacenter = "dc1"
 }
 
 resource "consul_key_prefix" "test" {
